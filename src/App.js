@@ -68,7 +68,9 @@ export class MapContainer extends Component {
             <div>
               <h2>{this.state.selectedPlace.name}</h2>
             </div>
-            <Polygon
+
+          </InfoWindow>
+          <Polygon
               paths={triangleCoords}
               strokeColor="#0000FF"
               strokeOpacity={0.8}
@@ -76,7 +78,6 @@ export class MapContainer extends Component {
               fillColor="#0000FF"
               fillOpacity={0.35}
             />
-          </InfoWindow>
         </Map>
 
       </div>
